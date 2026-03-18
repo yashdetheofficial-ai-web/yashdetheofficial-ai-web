@@ -26,6 +26,9 @@ const Hero = () => {
 
             {/* Content */}
             <div className="relative z-10 text-center px-4 sm:px-6">
+                <div className="inline-block px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-md mb-6 animate-fade-in">
+                    <span className="text-xs sm:text-sm font-bold tracking-[0.3em] text-emerald-400 uppercase">Dethe Patil Farming</span>
+                </div>
                 <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-6 leading-none uppercase">
                     POULTRY <br />
                     <span className="futuristic-accent text-emerald-400">SOLUTIONS.</span>
