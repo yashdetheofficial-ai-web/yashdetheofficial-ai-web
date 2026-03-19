@@ -200,7 +200,7 @@ const PremiumInventory = () => {
 
                 <div className="futuristic-card p-6 rounded-2xl flex flex-col h-full">
                     <div className="image-container mb-6">
-                        <img src="health_doctor_ai.png" alt="Birds Health & Doctor AI" />
+                        <img src={`${import.meta.env.BASE_URL}health_doctor_ai.png`} alt="Birds Health & Doctor AI" />
                     </div>
                     <h3 className="text-xl font-bold futuristic-accent mb-2">Birds Health & Meds</h3>
                     <p className="text-gray-500 text-sm mb-6">Advanced supplements and vaccines to ensure 0% mortality.</p>
@@ -209,7 +209,7 @@ const PremiumInventory = () => {
 
                 <div className="futuristic-card p-6 rounded-2xl flex flex-col h-full">
                     <div className="image-container mb-6">
-                        <img src="hens_feed_chatbot.png" alt="Hens Feed Rate AI Chatbot" />
+                        <img src={`${import.meta.env.BASE_URL}hens_feed_chatbot.png`} alt="Hens Feed Rate AI Chatbot" />
                     </div>
                     <h3 className="text-xl font-bold futuristic-accent mb-2">Day-Old Chicks & Feed</h3>
 
@@ -223,7 +223,7 @@ const PremiumInventory = () => {
 
                 <div className="futuristic-card p-6 rounded-2xl flex flex-col h-full">
                     <div className="image-container mb-6">
-                        <img src="eggs_rate_ai.png" alt="Eggs Daily Rate AI Chatbot" />
+                        <img src={`${import.meta.env.BASE_URL}eggs_rate_ai.png`} alt="Eggs Daily Rate AI Chatbot" />
                     </div>
                     <h3 className="text-xl font-bold futuristic-accent mb-2">Eggs Daily Rate</h3>
                     <div className="bg-black/40 rounded-lg p-3 mb-4 border border-gray-800">
