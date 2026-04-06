@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import appIcon from '../assets/app-icon.png';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +22,17 @@ const Navbar = () => {
                     <a href="#optimizer" className="hover:text-emerald-400 transition-colors">AI Plan</a>
                     <a href="#products" className="hover:text-emerald-400 transition-colors">Sourcing</a>
                     <a href="#expense-tracker" className="hover:text-orange-400 transition-colors font-bold text-orange-500/90 whitespace-nowrap">Daily Expenses</a>
-
+                    
+                    {/* Download App Button */}
+                    <a 
+                        href="https://drive.google.com/file/d/1DO4ftYzwlR_V0ZPifEsIh96nTEL44iLn/view?usp=drive_link" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="download-app-btn bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white px-4 py-2 rounded-full text-xs font-bold transition-all transform hover:scale-105 shadow-lg shadow-emerald-900/20 flex items-center gap-2 border border-emerald-400/30"
+                    >
+                        <img src={appIcon} alt="App Icon" className="h-5 w-5 rounded-md shadow-sm" />
+                        POULTRY AI DOWNLOAD APP
+                    </a>
                 </div>
 
                 {/* Hamburger Button - Mobile Only */}
@@ -59,6 +70,16 @@ const Navbar = () => {
                         className="hover:text-orange-400 text-orange-500/90 transition-colors py-2 border-b border-gray-800"
                     >
                         Daily Expenses
+                    </a>
+                    <a
+                        href="https://drive.google.com/file/d/1DO4ftYzwlR_V0ZPifEsIh96nTEL44iLn/view?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setMenuOpen(false)}
+                        className="download-app-btn-mobile bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-6 py-3 rounded-xl text-center font-bold tracking-widest shadow-lg active:scale-95 transition-all mt-2 flex items-center justify-center gap-3"
+                    >
+                        <img src={appIcon} alt="App Icon" className="h-6 w-6 rounded-lg shadow-md" />
+                        POULTRY AI DOWNLOAD APP
                     </a>
                 </div>
             )}

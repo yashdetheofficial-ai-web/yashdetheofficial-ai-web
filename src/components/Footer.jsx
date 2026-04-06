@@ -1,3 +1,4 @@
+
 const Footer = () => {
     const locations = [
         "Mumbai", "Pune", "Nashik", "Ahilyanagar", "Shirdi",
@@ -27,6 +28,7 @@ const Footer = () => {
             <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-light text-gray-600">
                 &copy; 2026 <span className="text-gray-400 font-semibold">Dethe Patil Poultry Industries</span>. All Rights Reserved.
             </p>
+
         </footer>
     );
 };
